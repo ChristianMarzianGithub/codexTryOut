@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply text-slate-900;
+}
+
+a {
+  @apply text-primary font-semibold;
+}
+
+button:disabled {
+  @apply opacity-70 cursor-not-allowed;
+}
