@@ -1,120 +1,76 @@
-export const company = {
-  name: 'ClearFlow Plumbing Co.',
-  tagline: 'Hello! Your trusted local plumbers',
-  mission:
-    'We deliver dependable plumbing repairs, replacements, and upgrades with transparent pricing and friendly service.',
-  phone: '+18005551234',
-  phoneDisplay: '(800) 555-1234',
-  email: 'hello@clearflowplumbing.com',
-  address: '2450 Riverside Drive, Suite 110, Springfield, USA',
-  license: 'State Plumbing License #CF-482913'
-};
-
 export const services = [
   {
     title: 'Emergency Leak Repair',
-    description:
-      'Rapid response technicians ready 24/7 to stop leaks, burst pipes, and water damage before it spreads.',
-    startingPrice: 149
-  },
-  {
-    title: 'Drain Cleaning & Hydro Jetting',
-    description:
-      'Clearing stubborn clogs and root intrusions with safe, modern equipment for long-lasting flow.',
-    startingPrice: 129
+    description: '24/7 dispatch with rapid diagnostics for burst pipes, slab leaks, and flooding emergencies.',
+    icon: '🚨',
+    highlights: ['Rapid response in under 60 minutes', 'Certified leak detection specialists', 'Fully stocked service vans']
   },
   {
     title: 'Water Heater Installation',
-    description:
-      'Energy-efficient tank and tankless water heaters from top brands, professionally installed and warrantied.',
-    startingPrice: 899
+    description: 'Energy-efficient tankless and hybrid systems installed with manufacturer-backed warranties.',
+    icon: '🔥',
+    highlights: ['Tankless upgrades', 'Annual maintenance plans', 'Financing options available']
   },
   {
-    title: 'Bathroom & Kitchen Remodels',
-    description:
-      'Plumbing upgrades, fixture replacements, and rerouting to bring your dream remodel to life.',
-    startingPrice: 499
+    title: 'Drain Cleaning & Hydro Jetting',
+    description: 'Eco-friendly hydro jetting that clears years of build-up without damaging your pipes.',
+    icon: '💧',
+    highlights: ['Camera inspections included', 'Safe for older plumbing', 'Preventative maintenance memberships']
+  },
+  {
+    title: 'Remodel & New Construction',
+    description: 'Licensed plumbing contractors for kitchens, bathrooms, and custom home builds.',
+    icon: '🛠️',
+    highlights: ['Dedicated project manager', 'Transparent progress tracking', 'Permits handled in-house']
   }
 ];
 
 export const testimonials = [
   {
-    quote:
-      'ClearFlow fixed our burst pipe within an hour of calling—professional, quick, and they cleaned up afterwards! Highly recommend.',
-    author: 'Jill H., Homeowner'
+    name: 'Linda Matthews',
+    role: 'Homeowner in Riverview',
+    quote: 'ClearFlow Plumbing saved our basement after a late-night pipe burst. They arrived in 40 minutes and handled everything professionally.'
   },
   {
-    quote:
-      'From the estimate to the installation, the team was courteous and transparent. Our new water heater works perfectly.',
-    author: 'Ronald P., Restaurant Owner'
+    name: 'Jason Wu',
+    role: 'Owner, Maple Cafe',
+    quote: 'Our restaurant cannot afford downtime. ClearFlow scheduled hydro jetting after hours and kept us updated throughout.'
   },
   {
-    quote:
-      'They unclogged our main line without any mess and gave tips to prevent future issues. Excellent service.',
-    author: 'Priya L., Property Manager'
+    name: 'Sandra Lee',
+    role: 'Property Manager',
+    quote: 'Their maintenance memberships keep our rental units in top shape. Residents rave about the courteous technicians.'
   }
 ];
 
 export const faqs = [
   {
-    question: 'Do you offer same-day service?',
-    answer:
-      'Yes, our dispatch team reserves same-day appointments for urgent repairs and emergency calls every day of the week.'
+    question: 'Do you offer same-day appointments?',
+    answer: 'Yes, we reserve a portion of our schedule for same-day service and can usually accommodate emergency calls within one hour.'
   },
   {
-    question: 'Are your plumbers licensed and insured?',
-    answer:
-      'All ClearFlow technicians hold current state licenses, are background-checked, and carry full liability insurance.'
+    question: 'Are your technicians licensed and insured?',
+    answer: 'Every ClearFlow technician carries state licensing, background checks, and full insurance coverage for peace of mind.'
   },
   {
-    question: 'What financing options are available?',
-    answer:
-      'We partner with HomeProject Financing to offer low-interest payment plans, including 0% APR options for qualifying customers.'
+    question: 'Can I finance a major plumbing project?',
+    answer: 'Absolutely. We partner with regional lenders to offer low-interest financing for remodels, repipes, and water heater replacements.'
   }
-];
-
-export const financingOptions = [
-  {
-    name: '0% APR for 12 Months',
-    details: 'Ideal for major repairs or remodels. Approval in minutes with zero pre-payment penalties.'
-  },
-  {
-    name: 'Low Monthly Payments',
-    details: 'Flexible terms up to 60 months with competitive interest rates and no hidden fees.'
-  },
-  {
-    name: 'Commercial Accounts',
-    details: 'Customized plans for property managers and businesses with net-30 billing and dedicated support.'
-  }
-];
-
-export const emergencyTips = [
-  'Shut off the main water valve to prevent further damage.',
-  'Take photos of the affected area for insurance claims.',
-  'Avoid using electrical appliances near standing water.',
-  'Call ClearFlow Plumbing for priority dispatch—technicians arrive within 60 minutes in most cases.'
-];
-
-export const quickLinks = [
-  { label: 'Schedule Service', href: '/contact' },
-  { label: 'View Services', href: '/services' },
-  { label: 'Meet the Team', href: '/about' },
-  { label: 'Financing Options', href: '/financing' }
 ];
 
 export const serviceAreas = [
-  'Springfield',
-  'Riverbend',
-  'Oak Park',
-  'Lakeview',
-  'North Hills',
-  'Cedar Grove',
-  'Maplewood',
-  'Downtown District'
+  'Downtown Riverview',
+  'Maple Heights',
+  'Lakeside Estates',
+  'Old Town District',
+  'Cedar Ridge'
 ];
 
-export const hours = {
-  weekdays: 'Monday – Friday: 7:00 AM – 7:00 PM',
-  saturday: 'Saturday: 8:00 AM – 4:00 PM',
-  emergency: 'Emergency response available 24/7'
+export const contactDetails = {
+  phone: '(555) 217-PLMB',
+  emergencyPhone: '(555) 000-FAST',
+  email: 'dispatch@clearflowplumbing.com',
+  address: '4287 Copperline Ave, Riverview, CA 94021',
+  license: 'CA CSLB #1075421',
+  hours: 'Technicians available 24/7. Office open Mon–Sat, 7am–7pm.'
 };
