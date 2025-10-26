@@ -1,0 +1,59 @@
+
+---
+
+### 🚀 Output Requirements
+1. Complete code for backend, frontend, and Dockerfiles.  
+2. `docker-compose.yml` to run both containers locally.  
+3. Clear build and run instructions.  
+4. Step-by-step deployment guide for **Google Cloud Run**, including:
+   - How to build container images
+   - How to push to **Google Artifact Registry**
+   - How to deploy each service (frontend and backend) to Cloud Run  
+   - How to configure CORS and environment variables
+
+---
+
+### 💡 Implementation Notes
+- Use clean, modular, and commented code.
+- The backend should have an `/api` base path.
+- Use Spring profiles or `.env` files for configuration.
+- Frontend should read backend API URL from environment variables (e.g., `VITE_API_URL`).
+- Optimize Docker images (use multi-stage builds).
+
+fittrack/
+├── backend/
+│ ├── src/
+│ ├── pom.xml
+│ ├── Dockerfile
+│ └── .dockerignore
+├── frontend/
+│ ├── src/
+│ ├── package.json
+│ ├── vite.config.js
+│ ├── Dockerfile
+│ └── .dockerignore
+├── docker-compose.yml
+├── README.md
+└── .env.example
+
+
+---
+
+### 🚀 Output Requirements
+1. Complete code for backend, frontend, and Dockerfiles.  
+2. `docker-compose.yml` to run both containers locally.  
+3. Clear build and run instructions.  
+4. Step-by-step deployment guide for **Google Cloud Run**, including:
+   - How to build container images
+   - How to push to **Google Artifact Registry**
+   - How to deploy each service (frontend and backend) to Cloud Run  
+   - How to configure CORS and environment variables
+
+---
+
+### 💡 Implementation Notes
+- Use clean, modular, and commented code.
+- The backend should have an `/api` base path.
+- Use Spring profiles or `.env` files for configuration.
+- Frontend should read backend API URL from environment variables (e.g., `VITE_API_URL`).
+- Optimize Docker images (use multi-stage builds).
