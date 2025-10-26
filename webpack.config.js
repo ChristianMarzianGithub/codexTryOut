@@ -29,18 +29,7 @@ module.exports = {
         use: [
           isProd ? MiniCssExtractPlugin.loader : 'style-loader',
           {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: [require('postcss-preset-env')]
-              }
-            }
+            loader: 'css-loader'
           }
         ]
       },

@@ -16,7 +16,6 @@ contact—in addition to a welcoming "Hello" hero for new visitors.
 - React 18 with functional components
 - React Router DOM v6 for multi-page navigation
 - Webpack 5 + Babel for bundling and modern JavaScript compilation
-- PostCSS with preset-env for CSS features
 
 ## 🚀 Getting Started
 
@@ -67,7 +66,6 @@ You can deploy the `dist/` folder with any static host (e.g., Netlify, Vercel, A
 │       └── global.css
 ├── webpack.config.js
 ├── babel.config.json
-├── postcss.config.js
 ├── package.json
 └── README.md
 ```
