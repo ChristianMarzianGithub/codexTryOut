@@ -1,24 +1,52 @@
+You are a senior full-stack developer.  
+Create a complete production-ready web app called **FitTrack**.
+
+### 🎯 Purpose
+Track workouts and nutrition.
 
 ---
 
-### 🚀 Output Requirements
-1. Complete code for backend, frontend, and Dockerfiles.  
-2. `docker-compose.yml` to run both containers locally.  
-3. Clear build and run instructions.  
-4. Step-by-step deployment guide for **Google Cloud Run**, including:
-   - How to build container images
-   - How to push to **Google Artifact Registry**
-   - How to deploy each service (frontend and backend) to Cloud Run  
-   - How to configure CORS and environment variables
+### ⚙️ Tech Stack
+
+**Backend:**
+- Spring Boot (Java 17)
+- PostgreSQL database
+- RESTful API endpoints for:
+  - Users (registration, login, JWT auth)
+  - Workouts (CRUD)
+  - Meals (CRUD)
+- Authentication via JWT tokens
+- CORS configured to allow requests from the frontend container
+
+**Frontend:**
+- React + Vite + Tailwind CSS
+- Separate React app consuming the backend’s REST API
+- Features:
+  - Login / Register pages
+  - Dashboard showing user stats
+  - Forms to add workouts and meals
+  - API calls via Axios or Fetch with JWT auth headers
 
 ---
 
-### 💡 Implementation Notes
-- Use clean, modular, and commented code.
-- The backend should have an `/api` base path.
-- Use Spring profiles or `.env` files for configuration.
-- Frontend should read backend API URL from environment variables (e.g., `VITE_API_URL`).
-- Optimize Docker images (use multi-stage builds).
+### 🐳 Docker Setup
+
+**Architecture:**  
+- Two separate Docker containers:
+  1. **Backend container** (Spring Boot)
+  2. **Frontend container** (React app served via Nginx)
+
+**Requirements:**
+- Each service should have its own `Dockerfile` and `.dockerignore`
+- Include a root-level `docker-compose.yml` that:
+  - Builds and runs both containers
+  - Exposes backend on port `8080` and frontend on port `80`
+  - Uses environment variables for configuration (database URL, JWT secret, etc.)
+- Ensure CORS configuration allows the frontend container to communicate with the backend.
+
+---
+
+### 🧱 Project Structure
 
 fittrack/
 ├── backend/
